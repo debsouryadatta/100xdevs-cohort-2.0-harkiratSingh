@@ -12,3 +12,9 @@
 2.7 -> Git/github ✅
 
 ### Assignments
+[Assignments](https://github.com/100xdevs-cohort-2/assignments)
+1. After 2.2 Live Class -> 
+Topics - 
+
+2. After 2.6 Recorded Class ->
+Topics - 

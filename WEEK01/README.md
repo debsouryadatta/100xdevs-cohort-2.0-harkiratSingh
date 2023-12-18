@@ -13,5 +13,5 @@ Some Assignments are also given to us.
 
 ### Assignments
 [Assignments](https://github.com/100xdevs-cohort-2/assignments)
-1. After 2nd Class ->
+1. After 2nd Live Class ->
 Topics - Strings,Numbers,Arrays,Class,Date,JSON,Math,Object,Loops,Functions
