@@ -17,5 +17,45 @@ const fs = require('fs');
 const path = require('path');
 const app = express();
 
+app.use(express.json());
+
+app.get("/files", (req,res)=> {
+  console.log("hello");
+  fs.readdir(path.join(__dirname,"files") , (err,files)=> {
+    if(err){
+      res.status(500).send("Internal Server Error");
+    } else{
+      console.log(files);
+      res.status(200).json(files);
+    }
+  })
+})
+
+app.get("/file/:fileName" ,(req,res)=> {
+  let fileName = req.params.fileName;
+  fs.readFile(path.join(__dirname, "files", fileName), "utf-8", (err,data)=> {
+    if(err){
+      res.status(404).send("File not found");
+    } else {
+      res.status(200).send(data);
+    }
+  })
+})
+
+app.use((req, res) => {
+  res.status(404).send("Route not found");
+});
+
+
+// app.get("/ping" ,(req,res)=> {
+//   res.status(200).send("pong");
+// })
+
+
+
+// app.listen(5000, () => {
+//   console.log("Server started on port 5000");
+// });
+
 
 module.exports = app;

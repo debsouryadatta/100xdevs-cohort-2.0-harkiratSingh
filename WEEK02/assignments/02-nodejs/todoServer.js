@@ -39,11 +39,61 @@
 
   Testing the server - run `npm run test-todoServer` command in terminal
  */
-  const express = require('express');
-  const bodyParser = require('body-parser');
-  
-  const app = express();
-  
-  app.use(bodyParser.json());
-  
-  module.exports = app;
+const express = require("express");
+const bodyParser = require("body-parser");
+const { v4: uuidv4 } = require('uuid');
+
+const app = express();
+
+app.use(bodyParser.json());
+
+let todos = [];
+
+app.get("/todos", (req, res) => {
+  res.status(200).json(todos);
+});
+
+app.get("/todos/:id", (req, res) => {
+  let id=req.params.id;
+  let todo = todos.find(todo => todo.id === id);
+  if (todo) {
+    res.status(200).json(todo);
+  } else {
+    res.status(404).json("Not Found");
+  }
+});
+
+app.post("/todos", (req,res)=> {
+  let todo = req.body;
+  todo.id = uuidv4(); // Use uuidv4 to generate a unique ID
+  todos.push(todo);
+  res.status(201).json({id: todo.id});
+})
+
+app.put("/todos/:id", (req,res) => {
+  let id = req.params.id;
+  let updatedTodo = req.body;
+  let todo = todos.find(todo => todo.id === id);
+
+  if (todo) {
+    todo.title = updatedTodo.title;
+    todo.description = updatedTodo.description;
+    todo.completed = updatedTodo.completed;
+    res.status(200).json("Updated");
+  } else {
+    res.status(404).json("Not Found");
+  }
+})
+
+app.delete("/todos/:id", (req,res)=> {
+  let id = req.params.id;
+  todos = todos.filter((todo) => todo.id != id);
+  res.status(200).json("Deleted");
+})
+
+// Place this after all your other routes
+app.use((req, res) => {
+  res.status(404).json('Route not found!');
+});
+
+module.exports = app;
