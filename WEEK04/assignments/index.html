@@ -1,0 +1,112 @@
+<!-- You have been given the code of a purely frontend TODO app
+You have to fill in the following functions - 
+ - addTodoToDom
+ - removeTodoFromDom
+ - updateTodoInDom
+ - updateState
+
+These 4 functions comprise of what it means to create a library like React.
+The goal is the following - 
+1. Any time the updateState function is called with a new state, the updateState function calculates the diff between newTodos and oldTodos and call `addTodoToDom`, `removeTodoFromDom` or `updateState` based on the calculated diff.
+2. They id of a todo uniquely identifies it. If the title of a todo with the same id changes in two iterations, updateTodoInDom should be called for it.
+3. The structure of the state variable looks something like this - 
+```js
+    const todos = [{
+        title: "Go to gym",
+        description: "Go to gym from 7-8PM",
+        id: 1
+    }]
+``` -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script>
+    let globalId = 1;
+    let todoState = [];
+    let oldTodoState = [];
+
+    function addTodoToDom(todo) {
+      const todosDiv = document.getElementById("todos");
+      const todoDiv = document.createElement("div");
+      todoDiv.id = `todo-${todo.id}`;
+      todoDiv.innerHTML = `
+        <h2>${todo.title}</h2>
+        <p>${todo.description}</p>
+        <button onclick="removeTodoFromDom(${todo.id})">Delete</button>
+        <button onclick="updateTodoInDom(${todo.id})">Update</button>
+      `;
+      todosDiv.appendChild(todoDiv);
+    }
+
+    function removeTodoFromDom(id) {
+      const todoDiv = document.getElementById(`todo-${id}`);
+      todoDiv.remove();
+    }
+
+    function updateTodoInDom(id) {
+      const title = prompt("Enter new title");
+      const description = prompt("Enter new description");
+      const updatedTodo = todoState.find(todo => todo.id === id);
+      updatedTodo.title = title;
+      updatedTodo.description = description;
+      const todoDiv = document.getElementById(`todo-${id}`);
+      todoDiv.innerHTML = `
+        <h2>${title}</h2>
+        <p>${description}</p>
+        <button onclick="removeTodoFromDom(${id})">Delete</button>
+        <button onclick="updateTodoInDom(${id})">Update</button>
+      `;
+    }
+
+    function updateState(id) {
+      // calculate the diff b/w newTodos and oldTodos.
+      // More specifically, find out what todos are - 
+      // 1. added
+      // 2. deleted
+      // 3. updated
+      // const added = [];
+      // const deleted = [];
+      // const updated = [];
+      // calculate these 3 arrays
+      // call addTodo, removeTodo, updateTodo functions on each of the
+      // elements
+      const added = newTodos.filter(({ id: id1 }) => !oldTodoState.some(({ id: id2 }) => id2 === id1));
+      const deleted = oldTodoState.filter(({ id: id1 }) => !newTodos.some(({ id: id2 }) => id2 === id1));
+      const updated = newTodos.filter(({ id: id1 }) => oldTodoState.some(({ id: id2 }) => id2 === id1));
+
+      added.forEach(addTodoToDom);
+      deleted.forEach(({ id }) => removeTodoFromDom(id));
+      updated.forEach(todo => updateTodoInDom(todo.id));
+
+      oldTodoState = newTodos;
+    }
+
+    function addTodo() {
+      const title = document.getElementById("title").value;
+      const description = document.getElementById("description").value;
+      todoState.push({
+        title: title,
+        description: description,
+        id: globalId++,
+      })
+      addTodoToDom(todoState[todoState.length - 1]);
+      // updateState(todoState);
+    }
+  </script>
+</head>
+
+<body>
+  <input type="text" id="title" placeholder="Todo title"></input> <br /><br />
+  <input type="text" id="description" placeholder="Todo description"></input> <br /><br />
+  <button onclick="addTodo()">Add todo</button>
+  <br /> <br />
+
+  <div id="todos">
+
+  </div>
+</body>
+
+</html>

@@ -20,11 +20,14 @@
 3.4 -> Auth, JWT and assignments ✅
 3.5 -> DOM Introduction (Laisha)
 
+### Notion Notes
+Link - https://quickest-juniper-f9c.notion.site/Cohort-2-0-FullStack-Open-Source-6b6c2a9f1282499aba4782b88bf7e204
+
 
 ### Assignments
 [Assignments](https://github.com/100xdevs-cohort-2/assignments)
 1. After 3.2 Live Class -> 
-Topics - Middlewares ✅, JWT ✅, Mongo, Mongo-with-JWT
+Topics - Middlewares ✅, JWT ✅, Mongo ✅, Mongo-with-JWT ✅
 
 
 ### Extra Links:

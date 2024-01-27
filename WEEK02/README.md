@@ -19,6 +19,10 @@ Topics - Async functions, Promises
 2. After 2.6 Recorded Class -> ✅
 Topics - Express, HTTP Server
 
+### Notion Notes
+Link - https://quickest-juniper-f9c.notion.site/Cohort-2-0-FullStack-Open-Source-6b6c2a9f1282499aba4782b88bf7e204
+
 ### Extra Links:
 Gist: https://gist.github.com/hkirat/1809806cb30e5dbdfafe0ee170b8437d
 site (visualization): http://latentflip.com/loupe/
+
