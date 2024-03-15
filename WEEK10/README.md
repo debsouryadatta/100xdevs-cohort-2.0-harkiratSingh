@@ -2,6 +2,7 @@
 
 ### Live Classes
 10.1 -> sql vs nosql, connection string, psql & pg, creating schema, insert/select, sql injection, relationships, joins ✅
+
 10.2 -> Why orm, prisma basics, setting up prisma, prisma schema, migrations, prisma client, operations with prisma ✅
 
 

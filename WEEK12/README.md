@@ -6,9 +6,9 @@
 ### Recorded Classes
 12.1 -> Deploying Frontends to AWS, Object stores(S3) & CDNs(Cloudfront) work, uploading to S3, serving from Cloudfront, Connecting Domain to Cloudfront CDN ✅
 
-12.2 -> Advanced Ts Apis, Peak, Partial, Readonly, Record, Exclude, Type Inference in zod
+12.2 -> Advanced Ts Apis, Peak, Partial, Readonly, Record, Exclude, Type Inference in zod ✅
 
-     -> Cohort 1 - Deploying npm packages, Intro to Monorepos
+     -> Cohort 1 - Deploying npm packages, Intro to Monorepos ✅
 
 12.3 -> Actionable Docker, installing Docker, running docker images(postgress) on containers, ssh into docker contaiiner ✅
 
@@ -48,4 +48,10 @@ Link to the Steps
 After 12.5 -> 
 Link to the Steps
 1. https://daily-code-web.vercel.app/tracks/gZf9uBBNSbBR7UCqyyqT/prisma-1
+
+After 12.6 -> 
+Link to the Steps
+1. https://quickest-juniper-f9c.notion.site/Week-12-6-e4a8f5a33d4149dd88145c199497cefa
+
+
 

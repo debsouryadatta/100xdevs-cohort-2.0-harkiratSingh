@@ -2,6 +2,7 @@
 
 ### Live Classes
 11.1 -> Serverless Backends intro, when to use, Cloudflare Workers, Using hono library(just like express) ✅
+
 11.2 -> AWS Deployment, EC2 Instance, hitting the server, nginx as reverse proxy ✅
 
 

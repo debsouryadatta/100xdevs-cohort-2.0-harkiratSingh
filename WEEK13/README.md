@@ -1,15 +1,15 @@
 ## WEEK13
 
 ### Live Classes
-13.1 -> Backend of Medium project
+13.1 -> Backend of Medium project 
 
-13.2 -> Frontend of Medium project
+13.2 -> Class turned QnA session ✅
 
 
 ### Recorded Classes
-13.3 -> Backend of Medium project in detail
+13.3 -> Backend of Medium project in detail ✅
 
-13.4 -> Frontend of Medium project in detail
+13.4 -> Frontend of Medium project in detail ✅
 
 
 ### Notion Notes

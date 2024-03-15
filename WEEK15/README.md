@@ -1,11 +1,11 @@
-## WEEK14
+## WEEK15
 
 ### Live Classes
-14.1 -> 
+15.1 -> 
 
 
 ### Recorded Classes
-14.3 -> 
+15.3 -> 
 
 
 ### Notion Notes
@@ -17,8 +17,6 @@ Link - https://quickest-juniper-f9c.notion.site/Cohort-2-0-FullStack-Open-Source
 
 
 ### Extra Links
-After 14.1 -> 
+After 15.1 -> 
 Link to the Steps
-1. 
-
-
+1.
