@@ -35,5 +35,5 @@ After 7.1 ->
 After 7.2 ->
 Repo Link: https://github.com/100xdevs-cohort-2/week-7
 
-After 7.4 -> 
+After 7.3 -> 
 Repo Link: https://github.com/100xdevs-cohort-2/7.4
