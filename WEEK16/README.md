@@ -1,9 +1,9 @@
 ## WEEK16
 
 ### Live Classes
-16.1 -> Monorepos & Turborepos -> Intro, Why monorepos? Build system vs Build system orchestrator vs Monorepo framework, setting up turborepo, exploring folder structure -> root dir/packages dir
+16.1 -> Monorepos & Turborepos -> Intro, Why monorepos? Build system vs Build system orchestrator vs Monorepo framework, setting up turborepo, exploring folder structure -> root dir/packages dir✅
 
-16.2 -> 
+16.2 -> Monorepos & Turborepos II -> Adding a page to apps/web, Exploring turbo.json, Adding React project(with vite), Caching in Turborepo(During build), Adding a Node.js app, Adding a common module ✅
 
 
 ### Recorded Classes
@@ -36,4 +36,19 @@ Link to the Steps
 
 ### Extras
 
+*** 16.3 -> Turborepo ***
 1. 16.3 -> Taking the NEXT_AUTH_CONFIG from here to a separate file so that it can be used inside the server side to get the id of the user, because without passing the NEXT_AUTH_CONFIG to the getServerSession, the id of the user doesn't gets displayed
+
+
+*** 16.2 -> Turborepo ***
+1. root package.json -:> "workspaces": ["apps/*" , "packages/*"]
+2. packages package.json ->   "exports": {
+    "./button": "./src/button.tsx",
+    "./card": "./src/card.tsx",
+    "./code": "./src/code.tsx"
+  },
+3. import format in package.json -> "@repo/ui": "*",
+4. Only one node_modules -> In the root dir
+5. After setting up the react-app, do npm i in the root dir to install the dependencies in the root node_modules
+6. Cashing in turborepo during npm run build
+7. Adding a common module in packages folder, then npm i in the root dir, then using it.

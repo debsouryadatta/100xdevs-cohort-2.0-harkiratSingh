@@ -79,3 +79,20 @@ Learn more about the power of Turborepo:
 - [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
 - [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
 - [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+
+
+
+
+### Points to remember:
+
+1. root package.json -:> "workspaces": ["apps/*" , "packages/*"]
+2. packages package.json ->   "exports": {
+    "./button": "./src/button.tsx",
+    "./card": "./src/card.tsx",
+    "./code": "./src/code.tsx"
+  },
+3. import format in package.json -> "@repo/ui": "*",
+4. Only one node_modules -> In the root dir
+5. After setting up the react-app, do npm i in the root dir to install the dependencies in the root node_modules
+6. Cashing in turborepo during npm run build
+7. Adding a common module in packages folder, then npm i in the root dir, then using it.
