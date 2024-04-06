@@ -1,15 +1,15 @@
 ## WEEK16
 
 ### Live Classes
-16.1 -> Monorepos & Turborepos -> Intro, Why monorepos? Build system vs Build system orchestrator vs Monorepo framework, setting up turborepo, exploring folder structure -> root dir/packages dir✅
+16.1 -> Monorepos & Turborepos -> Intro, Why monorepos? Build system vs Build system orchestrator vs Monorepo framework, setting up turborepo, exploring folder structure -> root dir/packages dir ✅
 
-16.2 -> Monorepos & Turborepos II -> Adding a page to apps/web, Exploring turbo.json, Adding React project(with vite), Caching in Turborepo(During build), Adding a Node.js app, Adding a common module ✅
+16.2 -> Monorepos & Turborepos II -> Adding a page to apps/web, Exploring turbo.json, Adding React project(with vite), Caching in Turborepo(During build), Adding a Node.js app, Adding a common module(Error in tsc while importing common inside nodejs app, used esbuild instead) ✅
 
 
 ### Recorded Classes
-16.3 -> Authentication using cookies -> why?, why not local storage, Types of cookies, Properties of cookies - HttpOnly, SameSite - Strict, Lax, None, CSRF attacks, using cookies inside code(nodejs,react)✅
+16.3 -> Authentication using cookies -> why?, why not local storage, Types of cookies, Properties of cookies - HttpOnly, SameSite - Strict, Lax, None, CSRF attacks, using cookies inside code(nodejs,react) ✅
 
-16.4 -> Next Auth -> Intro, Catch all routes, 3types - OAuth Providers, Email(Passwordless Email login via email OTP), Credentials (your own strategy), Custom Signup page✅
+16.4 -> Next Auth -> Intro, Catch all routes, 3types - OAuth Providers, Email(Passwordless Email login via email OTP), Credentials (your own strategy), Custom Signup page ✅
 
 
 ### Notion Notes

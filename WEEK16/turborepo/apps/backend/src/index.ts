@@ -1,8 +1,9 @@
 import express from 'express';
 const app = express();
+import {URL} from '@repo/common/url';
 
 app.get('/', (req, res) => {
-  res.status(200).json({ message: 'Hello from debu!' });
+  res.status(200).json({ message: 'Hello from debu!', url: URL});
 });
 
 app.listen(5000, () => {

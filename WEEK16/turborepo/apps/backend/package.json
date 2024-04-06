@@ -12,7 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2",
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "@repo/common": "*"
   },
   "devDependencies": {
     "@types/express": "^4.17.21"

@@ -7,7 +7,7 @@
 
 ### Recorded Classes
 7.3 -> Recoil Deep Dive -> Basic - Atom, Selector, Asynchronous data queries, useRecoilState, useRecoilValue, useSetRecoilState
-Advance - atomFamily, selectorFamily, useRecoilStateLoadable, useRecoilValueLoadable 
+Advance - atomFamily, selectorFamily, useRecoilStateLoadable, useRecoilValueLoadable ✅
 
 
 ### Notion Notes
