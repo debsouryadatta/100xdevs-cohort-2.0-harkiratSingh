@@ -3,7 +3,7 @@
 ### Live Classes
 17.1 -> PAYTM I -> Architecturing/Feature planning the project, Understanding the architecture, Tech Stack, Bootstrapping the app with Turborepo, Adding tailwind to it, Adding prisma ✅
 
-17.2 -> 
+17.2 -> PAYTM II -> 
 
 
 ### Recorded Classes
@@ -25,7 +25,7 @@ Link to the Steps
 
 After 17.2 -> 
 Link to the Steps
-1. 
+1. https://projects.100xdevs.com/tracks/Paytm/paytm17-1
 
 
 ### Extras
