@@ -22,5 +22,7 @@
 - Firstly just variables for keeping the state in backend,
 - Then using good class format
 - Finally with Singleton pattern with classes
+- Using Redis for PubSubs, creating the singleton class for subscribing and unsubscribing to diff. stocks, storing the subscribed userIds inside a Map(Stock -> [UserIds])
+- Messages get logged whenever a new message is published through a separate terminal
 
 
