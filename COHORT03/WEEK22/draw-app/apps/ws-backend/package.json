@@ -1,25 +1,25 @@
 {
   "name": "ws-backend",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "tsc -b",
-    "start": "node dist/index.js",
-    "dev": "pnpm run build && pnpm run start"
+    "start": "node ./dist/index.js",
+    "dev": "npm run build && npm run start"
+  },
+  "dependencies": {
+    "@types/jsonwebtoken": "^9.0.7",
+    "jsonwebtoken": "^9.0.2",
+    "ws": "^8.18.0",
+    "@repo/db": "workspace:*"
   },
   "devDependencies": {
-    "@repo/backend-common": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "@types/jsonwebtoken": "^9.0.9",
-    "@types/ws": "^8.18.1"
+    "@types/ws": "^8.5.13",
+    "@repo/backend-common": "workspace:*"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "jsonwebtoken": "^9.0.2",
-    "ws": "^8.18.1"
-  }
+  "description": ""
 }
